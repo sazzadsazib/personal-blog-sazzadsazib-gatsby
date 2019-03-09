@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "personal-blog-sazzadsazib",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "version": "0.0.1",
+  "author": "Sazzad Sazib",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/sazzadsazib/personal-blog-sazzadsazib/issues"
   },
   "dependencies": {
     "gatsby": "^2.1.27",
@@ -38,7 +38,7 @@
   "devDependencies": {
     "prettier": "^1.16.4"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/sazzadsazib/personal-blog-sazzadsazib#readme",
   "keywords": [
     "gatsby"
   ],
@@ -46,7 +46,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/sazzadsazib/personal-blog-sazzadsazib.git"
   },
   "scripts": {
     "build": "gatsby build",
