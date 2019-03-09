@@ -22,6 +22,7 @@ function Bio() {
             style={{
               display: `flex`,
               marginBottom: rhythm(2.5),
+              marginTop: rhythm(1.6),
             }}
           >
             <Image
@@ -38,11 +39,17 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              Written by <strong>{author}</strong> who lives and works in Dhaka, Bangladesh.
+              <br/>
+              <a style={{
+                textDecoration: 'none',
+                background: 'linear-gradient(141deg, #fa7e1e 0%, #d62976 51%, #962fbf 75%)',
+                opacity: 0.8,
+                color: 'white',
+              padding: '5px 15px',
+              borderRadius: 5,
+              marginTop: 10,}} href={`https://instagram.com/${social.instagram}`}>
+                follow him on Instagram
               </a>
             </p>
           </div>
@@ -65,7 +72,7 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
-          twitter
+          instagram
         }
       }
     }

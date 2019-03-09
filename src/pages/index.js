@@ -13,7 +13,8 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <React.Fragment>
+        <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
@@ -42,6 +43,7 @@ class BlogIndex extends React.Component {
           )
         })}
       </Layout>
+      </React.Fragment>
     )
   }
 }
