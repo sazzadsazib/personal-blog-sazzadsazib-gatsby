@@ -3,24 +3,9 @@ import { Link } from "gatsby"
 
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      width: window.innerWidth,
-    }
-  }
-  handleWindowSizeChange = () => {
-    this.setState({ width: window.innerWidth });
-  };
-  componentWillMount() {
-    window.addEventListener('resize', this.handleWindowSizeChange);
-  }
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowSizeChange);
-  }
+
   render() {
-    const { location, title } = this.props;
-    const { width } = this.state;
+    const { location } = this.props;
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
@@ -32,7 +17,7 @@ class Header extends React.Component {
               background: 'linear-gradient(141deg,#0098f3,#6650e0)',
               color: 'white',
               textAlign: 'left',
-              fontSize: width > 500 ? 20 : 16,
+              fontSize: 16,
               height: 65,
               width: '100%',
               position: 'fixed',
@@ -50,7 +35,7 @@ class Header extends React.Component {
               }}
               to={`/`}
             >
-              {width > 500 ? title: "Blogs by Sazzad Sazib"}
+              Blogs by Sazzad Sazib
             </Link>
           </div>
       )

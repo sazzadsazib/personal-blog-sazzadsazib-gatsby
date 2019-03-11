@@ -167,4 +167,4 @@ This is just one way of doing this, there are many ways to implement this,
 
 let me know your thoughts,
 
-[Find Me On Github](https://github.com/sazzadsazib)
+[Find me On Github](https://github.com/sazzadsazib)
